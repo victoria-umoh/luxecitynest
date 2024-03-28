@@ -15,10 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone')->nullable();
+            // $table->boolean('role')->default(0);
+            // $table->integer('role')->default(3);   //1-admin 2-lad 3-user
+            $table->enum('role', ['admin','lad','user'])->default('user');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('photo')->nullable();
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes(); // This line adds the soft delete column
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

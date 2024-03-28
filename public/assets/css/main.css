@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf)format(ttf);
+}
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(../fonts/Poppins/Poppins-Bold.ttf)format(ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins-regular", sans-serif;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+/* home page */
+/* navbar */
+.nav-container{
+    background-color: #533B4D;
+}
+.navbar .navbar-brand{
+    color: white;
+    font-family: "Poppins-bold", sans-serif;
+    font-weight: 700;
+}
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+.navbar-collapse ul li a{
+    color: white;
+    font-family: "Poppins-bold", sans-serif;
+    font-weight: 500;
+}
+
+.navbar-collapse ul li a:hover{
+    color: #EE6C4D;
+}
+
+.fa-city{
+    color: white;
+}
+.search-section{
+    min-height: 500px;
+    background-image: url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    border: 2px solid red;
+}
+.search-section::before{
+    content: "";
+    position: absolute;
+    top:80px ;
+    left:90px ;
+    width: 85%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.search-bar{
+   position: relative; 
+   z-index: 2;
+}
+.search-title{
+   margin-top: 130px;
+   margin-bottom: 50px;
+   color: #ffffff;
+}
+.category-radio{
+    margin-bottom: 10px;
+}
+.category-selection{
+    display: block;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 0;
+    color: #533B4D;
+    font-weight: 700;
+}
+.category-radio input[type="radio"]:checked + label,.category-radio input[type="radio"]:hover + label{
+    background: linear-gradient(to left, #533B4D,#EE6C4D)!important;
+    outline: none;
+    color: #ffffff !important;
+    border: none;
+}
+.search-option{
+    border-radius: 0;
+    color: #533B4D;
+    font-weight: 700;
+}
+/* .search-option option{
+    background-color: #ffffff !important;
+} */
+.search-btn{
+    margin-top: 20px;
+}
+.btn-search{
+    background-color: #533B4D;
+    color: #ffffff;
+    border-color: #533B4D;
+    border-radius: 0;
+}
+.btn-search:hover{
+    background-color: #533B4D; 
+    border-color: #533B4D;
+}
+
+.property-section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* Login */
+.login-body{
+    background-image: url("../images/hero-image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.login{
+    margin: 60px;
+    min-height: 400px;
+}
+.login-side{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px 0px 0px 8px;
+}
+.login-side h1{
+    color: #ffffff;
+    font-family: "Poppins-bold" ,sans-serif;
+    font-weight: 800;
+    padding-top: 150px;
+}
+.form-section{
+    background-color: #ffffff;
+    border-radius:0px 8px 8px 0px ;
+}
+.login-text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.login-input{
+    margin-bottom: 50px;
+}
+.purple{
+    font-weight: 500;
+    color: #533B4D;
+}
+.custom-btn{
+    background: #533B4D;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0px;
+}
+.custom-btn:hover{
+    background: #533B4D;
+    color: #ffffff;
+}
+.link{
+    color: #533B4D;
+    font-weight: 700;
+}
+.link:hover{
+    color: #EE6C4D;
+}
+/* sign up */
+.signup-body{
+    background-color: rgba(83,59,77, 0.2);
+}
+.signup{
+    background-image: url(../images/hero-image4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 300px; 
+    position: relative;
+}
+.signup::before{
+    content: "";
+    position: absolute;
+    top:0 ;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.signup .inner-div{
+    z-index: 2;
+    margin-top: 70px;
+    font-weight: 900;
+}
+.white{
+    color: #ffffff;
+}
+.role-section{
+    margin-bottom: 150px;
+}
+.role-box{
+    min-height: 230px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+}
+.bold-purple{
+    color: #533B4D;
+    font-weight: 700;
+}
+.bold-white{
+    color: #ffffff;
+    font-weight: 700;
+}
+/* bottom nav */
+.bottom-nav{
+    background-color: #533B4D;
+    padding: 12px;
+    color: #ffffff;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.bottom-nav-col a{
+    text-decoration: none;
+}
+.bottom-nav-col a:hover{
+    color: #ffffff;
+}
+.advertise{
+   margin-right: 20px;
+}
+.btn-outline-warning{
+    border: 1px solid #EE6C4D;
+}
+
+/* footer */
+.footer{
+    background-color: #EE6C4D;
+    min-height: 150px;
+    color: #5a5555;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer-title{
+    padding-left: 30px;
+}
+/* Register form */
+.reg-form{
+   margin-top: 80px;
+   margin-bottom: 80px;
+}
+
+.form-section{
+    padding: 40px;
+    background-color: rgba(83,59,77, 0.2);
+}
+.form-section input, .form-section select{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.form-section select option{
+    background-color: #EE6C4D;
+    color: yellow;
+}
+.form-section select option:checked {
+    background-color: #EE6C4D;
+}
+.form-section input::placeholder{
+    font-weight: 700;
+}
+.role-radio input[type="radio"]:checked + label,.role-radio input[type="radio"]:hover + label{
+    background-color: #533B4D !important;
+    outline: none;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 0;
+}
+.role-selection{
+    display: block;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 0;
+    color: #533B4D;
+    font-weight: 700;
+}
+/* agent listing */
+.search-section-agent{
+    min-height: 400px;
+    background-image: url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+}
+.search-section-agent::before{
+    content: "";
+    position: absolute;
+    top:0 ;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.test{
+    border: 2px solid red;
+}
+@media screen and (min-width: 290px) and (max-width: 991px) {
+  
+    .role-box{
+        margin-bottom: 50px;
+    }
+    .search-section::before{
+        content: "";
+        position: absolute;
+        top:80px ;
+        left:90px ;
+        width: 85%;
+        height: 70%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+}

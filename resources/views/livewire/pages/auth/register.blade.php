@@ -52,6 +52,24 @@ new #[Layout('layouts.guest')] class extends Component
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <div class="mt-4">
+            <x-input-label for="phone" :value="__('Phone')" />
+            <x-text-input wire:model="phone" id="phone" class="block mt-1 w-full" type="text" name="phone" required autocomplete="phone" />
+            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+        </div>
+        {{-- <div class="mt-4">
+            <div class="col-8">
+                <x-label for="country_code" value="{{ __('Country Code') }}" />
+                <div class="input-group">
+                    <select name="country_code" id="country_code" class="form-control" wire:model="country_code">
+                        <option value="+234">+234</option>
+                    </select>
+                    <x-input type="text" id="phone" name="phone" class="form-control" placeholder="Phone" wire:model="phone" />
+                </div>
+                @error('phone') <span class="error">{{ $message }}</span> @enderror
+            </div>
+        </div> --}}
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
@@ -73,6 +91,32 @@ new #[Layout('layouts.guest')] class extends Component
                             name="password_confirmation" required autocomplete="new-password" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <div class="row role-radio mb-5 mt-4">
+            <div class="col-md-3  ">
+                <input type="radio" class="btn-check" name="role" id="buy" autocomplete="off" value="user" checked>
+                <label class="btn  role-selection" for="buy">User</label>
+            </div>
+            <div class="col-md-3 ">
+                <input type="radio" class="btn-check" name="role" id="rent"  value="lad" autocomplete="off">
+                <label class="btn role-selection" for="rent">Landlord</label>
+            </div>
+            <div class="col-md-3 ">
+                <input type="radio" class="btn-check" name="role" id="shortlet" value="lad" autocomplete="off" >
+                <label class="btn role-selection" for="shortlet">Agent</label>
+            </div>
+            <div class="col-md-3 ">
+                <input type="radio" class="btn-check" name="role" id="land" value="lad" autocomplete="off">
+                <label class="btn role-selection" for="land">Developer</label>
+            </div>
+            <div class="col-md-3" >
+                <input type="radio" class="btn-check" name="role" id="admin" value="admin" autocomplete="off" />
+                <label class="btn role-selection" for="land">Admin</label>
+            </div>
+            <div class="col mt-5">
+                <p class="bold-purple">By clicking on "Register" you confirm that you agree to our website <a href="" class="link">Terms of use</a></p>
+            </div>
         </div>
 
         <div class="flex items-center justify-end mt-4">
